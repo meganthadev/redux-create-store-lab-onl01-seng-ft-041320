@@ -35,9 +35,5 @@ function render() {
   }
 };
 
-let store = createStore();
+let store = createStore(candyReducer);
 store.dispatch({ type: '@@INIT' });
-
-button.addEventListener('click', () => {
-    store.dispatch({ type: 'ADD_CANDY' });
-})
