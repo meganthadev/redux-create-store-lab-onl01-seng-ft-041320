@@ -38,3 +38,6 @@ function render() {
 let store = createStore();
 store.dispatch({ type: '@@INIT' });
 
+button.addEventListener('click', () => {
+    store.dispatch({ type: 'ADD_CANDY' });
+})
